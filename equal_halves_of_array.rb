@@ -9,7 +9,7 @@ def equal_halves_of_array(array)
 	i = array.length - 1
 	while i >= 0 do
 		sums[i] << down_to_sum
-		down_to_sum += el
+		down_to_sum += array[i]
 		i -= 1
 	end
 	sums.each_with_index do |values, idx|
